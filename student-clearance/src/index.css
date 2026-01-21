@@ -1,0 +1,198 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #2b6cb0, #3182ce);
+  color: white;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+header button {
+  background: white;
+  color: #2b6cb0;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background: #edf2f7;
+}
+
+/* LOGIN CONTAINER */
+.login-container {
+  max-width: 420px;
+  background: white;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2b6cb0;
+}
+
+/* FORM ELEMENTS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+/* BUTTON */
+button {
+  background: #2b6cb0;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2c5282;
+}
+
+/* DASHBOARD */
+.dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+table th {
+  background: #edf2f7;
+}
+
+/* STATUS BADGES */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.pending {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.cleared {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+/* OFFICER CARDS */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f7fafc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #2b6cb0;
+}
+
+.card button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* NOT FOUND PAGE */
+.not-found {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.not-found h1 {
+  font-size: 60px;
+  color: #2b6cb0;
+}
+
+.not-found p {
+  margin: 15px 0;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .login-container,
+  .dashboard {
+    margin: 30px 15px;
+  }
+}
